@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<!-- Bootstrap link -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<!-- Fontawesome link -->
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- jquery link -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title></title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin:0;
+			box-sizing: border-box;
+		}
+		body{
+			background:#C8D7DA;
+		}
+		.body-content{
+			width: 100vw;
+			height:20vh;
+		}
+		.student{
+			width:97vw;
+			height:20vh;
+			margin-left: 20px;
+			background-color: #fff;
+			box-shadow: 0px 0px 20px #cdcdcd;
+		}
+		.f1{
+			width: 100%;
+		display: grid;
+		place-items:center;		
+		}
+		td{
+			 padding:0 15px;
+		}
+		.stud{
+			height: 10vh;
+			width: 97vw;
+			margin-left: 20px;
+		background-color: #cdcdcd;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		display: none;	
+		}
+		h2{
+			color: black;
+			width: 100vw;
+		}
+		.fee{
+			height: 70vh;
+			width: 97vw;
+			margin-left: 20px;
+			background-color: #cdcd;
+			display: none;
+		}
+		.one{
+			background-color: rgba(255,255,255,0.5);
+			margin-top: 10px;
+			margin-left:90px; 
+		}
+		.two{
+			background-color: rgba(255,255,255,0.5);
+			margin-top: 10px;
+			margin-left: 50px;
+		}
+		.text-muted{
+			display: none;
+		}
+		.temp{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+<div class="row m-0 p-0 bg-dark body-content">
+</div>
+<div class="row student">
+	<form class="f1">
+		<table class=" table-borderless"> 
+			<tr>
+				<td>Student Number : </td>
+				<td ><input type="text" placeholder="Student Number" id="stid"></td>
+				<td><button type="button" class="btn btn-primary" id="sub">Search</button></td>
+			</tr>
+			
+		</table>
+		
+	</form>
+</div>
+<div class="row stud">
+	<h2><center>Student Information & Fee Particulars</center></h2>
+</div>
+<div class="row fee">
+	<div class="col-6 one ">
+		<div class="card-header">Student Information</div>
+         <div class="card-body text-primary">
+          <div class="row">
+          <div class="col-md-4 col-sm-4 col-sm-12">
+          <label for="inputCity">Student Name</label>
+          <input name="ctl00$BodyContent$txtStudentName" type="text" value="BALAJI.M" readonly="readonly" id="BodyContent_txtStudentName" class="form-control">
+          </div>
+          <div class="col-md-4 col-sm-4 col-sm-12">
+          <label for="inputPostalCode">Mobile Number</label>
+          <input name="ctl00$BodyContent$txtMobileNumber" type="text" value="XXXXXX4701" readonly="readonly" id="BodyContent_txtMobileNumber" class="form-control">
+          </div>
+         <div class="col-md-4 col-sm-4 col-sm-12">
+         <label for="inputState">Father Name</label>
+         <input name="ctl00$BodyContent$txtFatherName" type="text" value="M KOUSHIK RAJU(LATE)" readonly="readonly" id="BodyContent_txtFatherName" class="form-control">
+         </div>
+         <div class="col-md-4 col-sm-4 col-sm-12">
+         <label for="inputPostalCode">Mother Name</label>
+         <input name="ctl00$BodyContent$txtMotherName" type="text" readonly="readonly" id="BodyContent_txtMotherName" class="form-control">
+         </div>
+
+         <div class="col-md-4 col-sm-4 col-sm-12">
+         <label for="inputState">Email Address</label>
+         <input name="ctl00$BodyContent$txtEmailAddress" type="text" readonly="readonly" id="BodyContent_txtEmailAddress" class="form-control">
+         </div>
+          <div class="col-md-4 col-sm-4 col-sm-12">
+         <label for="inputState">Branch Name</label>
+         <input name="ctl00$BodyContent$txtBranchName" type="text" value="KNL-N120" readonly="readonly" id="BodyContent_txtBranchName" class="form-control">
+         </div>
+         <div class="col-md-4 col-sm-4 col-sm-12">
+         <label for="inputPostalCode">Class Name</label>
+        <input name="ctl00$BodyContent$txtClassName" type="text" value="SR/2-PUC/CEO" readonly="readonly" id="BodyContent_txtClassName" class="form-control">
+       </div>
+       <div class="col-md-4 col-sm-4 col-sm-12">
+        <label>Due Amount</label>
+       <input name="ctl00$BodyContent$txtDueAmount" type="text" value="0" readonly="readonly" id="BodyContent_txtDueAmount" class="form-control">
+      </div>
+      <div class="col-md-4 col-sm-4 col-sm-12">
+      <label>Un Cleared Amount</label>
+     <input name="ctl00$BodyContent$txtUnClearedAmount" type="text" value="0.00" readonly="readonly" id="BodyContent_txtUnClearedAmount" class="form-control">
+     </div>
+     </div>
+      </div>
+	</div>
+	<div class="col-4 two ">
+		<div class="card-header">Fee Particulars</div>
+         <div class="card-body text-primary">
+          <div class="row">
+          <div class="col-md-6 col-sm-6 col-sm-12">
+          <label>TOTAL FEE</label>
+          <input name="ctl00$BodyContent$txtCourseAmount" type="text" id="BodyContent_txtCourseAmount" class="form-control">
+          </div>
+          <div class="col-md-6 col-sm-6 col-sm-12">
+          <label>PAYABLE FEE</label>
+          <input name="ctl00$BodyContent$txtOtherAmount" type="text" id="BodyContent_txtOtherAmount" class="form-control">
+          </div>
+          <div class="col-md-6 col-sm-6 col-sm-12">
+          <label>BALANCE </label>
+          <input name="ctl00$BodyContent$txtTransportAmount" type="text" id="BodyContent_txtTransportAmount" class="form-control">
+          </div>
+
+         <!-- <div class="col-md-6 col-sm-6 col-sm-12">
+          <label>Uniform Amount</label>
+          <input name="ctl00$BodyContent$txtUniformAmount" type="text" readonly="readonly" id="BodyContent_txtUniformAmount" class="form-control">
+          </div>
+          <div class="col-md-6 col-sm-6 col-sm-12">-->
+          <label>PAY THROUGH </label>
+		  <label> CASH</label>
+          <input id="BodyContent_chkIncludeMaterialAmount" type="radio" name="ctl00$BodyContent$chkIncludeMaterialAmount">
+          <input name="ctl00$BodyContent$txtMaterialAmount" type="text" value="0" readonly="readonly" id="BodyContent_txtMaterialAmount" class="form-control">
+          <label> CHEQUE</label>
+          <input id="BodyContent_chkIncludeMaterialAmount" type="radio" name="ctl00$BodyContent$chkIncludeMaterialAmount">
+          <input name="ctl00$BodyContent$txtMaterialAmount" type="text" value="0" readonly="readonly" id="BodyContent_txtMaterialAmount" class="form-control">
+		  <label> OTHER</label>
+          <input id="BodyContent_chkIncludeMaterialAmount" type="radio" name="ctl00$BodyContent$chkIncludeMaterialAmount">
+          <input name="ctl00$BodyContent$txtMaterialAmount" type="text" value="0" readonly="readonly" id="BodyContent_txtMaterialAmount" class="form-control">
+		  </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+	</div>
+</div>
+<div class="col-md-12 col-sm-12 col-sm-12 text-right margin-top-10">
+                                            <p class="text-muted" style="margin-top: 10px;margin-left: 120px;text-align:center; margin-bottom: 1rem;">Please select the check box on top of the Material amount, if you wish to pay the material amount also.</p>
+                                        </div>
+                                        <br>
+                                        <div class="text-center temp margin-top-23">
+                                            <a id="BodyContent_btnSubmitData" class="btn btn-success" href="javascript:__doPostBack('ctl00$BodyContent$btnSubmitData','')"><i class="fa fa-save" aria-hidden="true"></i> Pay </a>
+                                            &nbsp;
+                                            <a id="BodyContent_btnSubmitData" class="btn btn-success" href="javascript:__doPostBack('ctl00$BodyContent$btnSubmitData','')"><i class="fa fa-save" aria-hidden="true"></i> Print recipt </a>
+                                            &nbsp;											
+                                                <a id="BodyContent_btnCancel" class="btn btn-danger" href="javascript:__doPostBack('ctl00$BodyContent$btnCancel','')"><i class="fa fa-close" aria-hidden="true"></i> Cancel</a>
+                                        </div>
+                                    </div>
+<script type="text/javascript">
+	$("#sub").click(function(){
+		var studnum = document.getElementById('stid').value;
+		var pat = /\d/;
+		var length = studnum.length;
+		if(studnum=="")
+		{
+			alert("Field Cannot be empty");
+		} 
+		else if(!studnum.match(pat)){
+			alert("Please enter only numbers");
+		}
+		else if(length<7 && length>7)
+		{
+			alert("Only seven digits required");
+		}
+		else if(studnum!='0987654')
+		{
+			alert("No such Student Number Found");
+		}
+		else{
+			$(".stud").css("display","flex");
+			$(".fee").css("display","flex");
+			$(".text-muted").css("display","block");
+			$(".temp").css("display","block");
+		}
+	});
+</script>
+</body>
+</html>
